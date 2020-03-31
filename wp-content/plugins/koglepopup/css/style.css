@@ -41,7 +41,7 @@
 _____________________________________________________________________________*/
 
 #promotion-header-title {
-    color: whitesmoke;
+    color: white;
     padding-left: 5%;
     padding-top: 5%;
     font-size: 1.25em;
@@ -50,13 +50,13 @@ _____________________________________________________________________________*/
 
 
 span#promotion-subheader-title {
-    color: whitesmoke;
+    color: white;
     font-size: 0.75em;
     display: block;
 }
 
 #promotion-header-title {
-    color: whitesmoke;
+    color: white;
     font-size: 1.25em;
 }
 
