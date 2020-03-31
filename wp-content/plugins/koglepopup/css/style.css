@@ -1,6 +1,14 @@
+body {
+    text-align: center;
+}
+
 /* fotos/animation - ikke udfyldt endnu 
 -----------------------------------------------------------------------------*/
+img{
+    max-width: 10%;
+    padding-top: 10%;
 
+}
 
 /* Boksen - ikke udfyldt endnu 
 -----------------------------------------------------------------------------*/
@@ -38,12 +46,13 @@
 }
 
 
+
+
 /* tekst
 _____________________________________________________________________________*/
 
 #promotion-header-title {
     color: white;
-    padding-left: 5%;
     padding-top: 5%;
     font-size: 1.75em;
     text-align: center;
