@@ -45,7 +45,8 @@ _____________________________________________________________________________*/
     color: white;
     padding-left: 5%;
     padding-top: 5%;
-    font-size: 1.25em;
+    font-size: 1.75em;
+    text-align: center;
 }
 
 
@@ -56,10 +57,7 @@ span#promotion-subheader-title {
     display: block;
 }
 
-#promotion-header-title {
-    color: white;
-    font-size: 1.25em;
-}
+
 
 
 /* Animation bevæegelse
