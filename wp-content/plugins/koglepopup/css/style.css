@@ -1,7 +1,4 @@
-/* knap
------------------------------------------------------------------------------*/
-
-/* fotos/animation
+/* fotos/animation - ikke udfyldt endnu 
 -----------------------------------------------------------------------------*/
 
 
@@ -12,13 +9,13 @@
     position: absolute;
     left: 400px;
     height: 280px;
-    background-color: #015e56;
+    background-color: #535a4f;
     transform: translateX(-200%) translateY(-200%);
 }
 
 
-
-
+/* lukke knappen 
+-----------------------------------------------------------------------------*/
 
 .popupCloseButton {
     position: absolute;
