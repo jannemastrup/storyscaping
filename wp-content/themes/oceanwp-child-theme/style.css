@@ -1,0 +1,21 @@
+/*
+ Theme Name:   Ocean Wp
+ Theme URI:    http://www.mynordicstory.dk/koglebeer
+ Description:  Child Theme based on Ocean Wp parent theme
+ Author:       Janne Mastrup, Cecillie Prisfeldt og Cathrine Østerbæk
+ Author URI:   http://www.mynordicstory.dk/koglebeer
+ Template:     oceanwp
+ Version:      1.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  oceanwp
+*/
+
+
+
+/* baggrundsfarve skiftet*/
+
+* {
+    background-color: beige;
+}
