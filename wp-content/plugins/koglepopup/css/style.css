@@ -1,3 +1,5 @@
+/* devices (mobil) */
+
 body {
 	text-align: center;
 }
@@ -34,7 +36,7 @@ img {
 
 .popupCloseButton {
 	color: white;
-	font-size: 3em;
+	font-size: 3.5em;
 	margin: auto;
 }
 
@@ -49,7 +51,7 @@ img {
 
 a {
 	color: white;
-	font-size: 3em;
+	font-size: 3.5em;
 	margin: auto;
 }
 
@@ -65,7 +67,7 @@ _____________________________________________________________________________*/
 #promotion-header-title {
 	color: white;
 	padding-top: 3%;
-	font-size: 3.4em;
+	font-size: 3.7em;
 	text-align: center;
 }
 
@@ -73,7 +75,7 @@ _____________________________________________________________________________*/
 
 #promotion-subheader-title {
 	color: white;
-	font-size: 2.3rem;
+	font-size: 2.2rem;
 	margin-top: 5%;
 	display: block;
 	margin-left: 5%;
@@ -209,16 +211,14 @@ _____________________________________________________________________________*/
 
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px)
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px)
-}
-
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px)
+@media only screen and (min-width: 768px) { 
+	
+	#promotion-subheader-title {
+    font-size: 3.3em;
+   
+}
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
