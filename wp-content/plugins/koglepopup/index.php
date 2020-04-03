@@ -22,7 +22,7 @@ function responsive_popup_form()
     $content .= '<<h2 id="promotion-subheader-title">Er du over den lovlige drikkealder i Danmark?</h2>>';
     $content .= '<section class="janej">';
     $content .= '<h3 id="close" class="popupCloseButton">JA</h3>';
-    $content .= '<a href="https://www.sum.dk/Aktuelt/Nyheder/Forebyggelse/2013/Januar/Lovstramning_skal_begraense_unges_ryge_og_drukvaner.aspx">NEJ</a>;
+    $content .= '<a href="https://www.sum.dk/Aktuelt/Nyheder/Forebyggelse/2013/Januar/Lovstramning_skal_begraense_unges_ryge_og_drukvaner.aspx">NEJ</a>';
     $content .= '</section>';
     $content .= '</div>';
     $content .= '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>';
@@ -49,7 +49,6 @@ function responsive_popup_form()
     {
         
         
-    
         
      wp_enqueue_style('CustomStylesheet', plugins_url('koglepopup/css/style.css')); 
         
