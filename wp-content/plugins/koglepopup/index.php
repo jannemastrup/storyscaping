@@ -10,7 +10,6 @@
 */
 
 
-
 # Creating a responsive discount popup form
 function responsive_popup_form()
 {
@@ -49,11 +48,13 @@ function responsive_popup_form()
     function register_styles_and_scripts_for_responsive_popup_form() 
     {
         
+        
+         wp_enqueue_style('CustomStylesheet', plugins_url('koglepopup/css/style.css'));
         wp_enqueue_style('CustomMaterializeCSS','https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css');
         
         wp_enqueue_style('CustomFontMaterialIcons','https://fonts.googleapis.com/icon?family=Material+Icons');
         
-        wp_enqueue_style('CustomStylesheet', plugins_url('responsive-popup-form/css/style.css'));
+       
         
         wp_deregister_script('jquery');
 
