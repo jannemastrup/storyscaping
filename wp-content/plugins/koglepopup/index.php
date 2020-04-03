@@ -16,14 +16,18 @@ function responsive_popup_form()
 
     $content = '';
     $content .= '<div class="box slide-top" id="slideBox">';
-    $content .= '<img src="img/logoanimate.gif" id="koglelogo" alt="animereret gif logo kogle">';
-    $content .= '<div id="closepopupbutton">X</div>';
+    $content .= '<img src=" '.plugins_url("koglepopup/img/logoanimate.gif").' " ';
+     $content .= 'alt="kogleanimation">';
     $content .= '<h1 id="promotion-header-title">KOGLE</h1>';
-    $content .= '<<h2 id="promotion-subheader-title">Er du over den lovlige drikkealder i Danmark?</h2>>';
-    $content .= '<section class="janej">';
+    $content .= '<h2 id="promotion-subheader-title">Er du over den lovlige drikkealder i Danmark?</h2>';
+   $content .= '<section class="janej">';
+   $content .= '<div>';
     $content .= '<h3 id="close" class="popupCloseButton">JA</h3>';
-    $content .= '<a href="https://www.sum.dk/Aktuelt/Nyheder/Forebyggelse/2013/Januar/Lovstramning_skal_begraense_unges_ryge_og_drukvaner.aspx">NEJ</a>';
-    $content .= '</section>';
+     $content .= '</div>';
+       $content .= '<div>';
+    $content .= '<a href="https://www.sum.dk/Aktuelt/Nyheder/Forebyggelse/2013/Januar/Lovstramning_skal_begraense_unges_ryge_og_drukvaner">NEJ</a>';
+     $content .= '</div>';
+$content .= '</section>';
     $content .= '</div>';
     $content .= '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>';
     $content .= '<script>

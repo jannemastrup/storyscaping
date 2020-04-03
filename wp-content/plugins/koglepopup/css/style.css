@@ -23,7 +23,7 @@ img {
 /* Boksen - ikke udfyldt endnu 
 -----------------------------------------------------------------------------*/
 .box {
-	top: -260px;
+	top: -360px;
 	width: 90%;
 	position: relative;
 	left: 5%;
@@ -37,6 +37,27 @@ img {
 .janej {
 	display: flex;
 	align-items: center;
+}
+
+.janej div {
+    width: 50%;
+    flex-wrap: wrap;
+    
+}
+
+/*--styling nej knap---*/
+.janej div a {
+    color: white;
+    font-size: 4em;
+    font-family: GothamBookRegular;
+    margin: auto;
+    font-weight: 800;
+}
+
+.janej div a:hover {
+	color: #af7e5f;
+	text-decoration: underline;
+
 }
 
 /* ja knap
@@ -57,23 +78,6 @@ img {
 	text-decoration: underline;
 }
 
-/* nej knap
------------------------------------------------------------------------------*/
-
-a {
-	color: white;
-	font-size: 4em;
-	margin: auto;
-	font-family: GothamBookRegular;
-
-
-}
-
-
-a:hover {
-	color: #af7e5f;
-
-}
 
 /* tekst
 _____________________________________________________________________________*/
@@ -106,7 +110,7 @@ _____________________________________________________________________________*/
 
 
 
-/* Animation bevæegelse
+/* Animation bevæegelse af slide in box lavet med animista.net
 -----------------------------------------------------------------------------*/
 
 
@@ -242,9 +246,12 @@ _____________________________________________________________________________*/
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px)
+@media only screen and (min-width: 992px){
+    
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px)
+{
+    
 }
