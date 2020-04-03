@@ -58,9 +58,7 @@ function responsive_popup_form()
 
         wp_enqueue_script('CustomJqueryScript','https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), null, true);
         
-        wp_enqueue_script('CustomMaterializeScript','https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js', array('CustomJqueryScript'), null, true);
-        
-        wp_enqueue_script('CustomScript', plugins_url('responsive-popup-form/js/script.js'), array('CustomMaterializeScript'), null, true);
+    
     }
 
 ?>
