@@ -1,7 +1,12 @@
+/* font
+-----------------------------------------------------------------------------*/
+@font-face {
+	font-family: GothamBookRegular;
+	src: url(../font/GothamBookRegular.otf);
+}
+
+
 /* devices (mobil) */
-
-
-
 
 body {
 	text-align: center;
@@ -11,7 +16,7 @@ body {
 -----------------------------------------------------------------------------*/
 img {
 	max-width: 100%;
-	padding-top: 10%;
+	padding-top: 5%;
 
 }
 
@@ -41,13 +46,15 @@ img {
 	color: white;
 	font-size: 4em;
 	margin: auto;
-	
+	font-family: GothamBookRegular;
+
+
 }
 
 
-.popupCloseButton:hover{ 
-	color:#af7e5f;
-	text-decoration:underline;
+.popupCloseButton:hover {
+	color: #af7e5f;
+	text-decoration: underline;
 }
 
 /* nej knap
@@ -57,13 +64,14 @@ a {
 	color: white;
 	font-size: 4em;
 	margin: auto;
+	font-family: GothamBookRegular
 
 
 }
 
 
 a:hover {
-	color:#af7e5f;
+	color: #af7e5f;
 
 }
 
@@ -75,6 +83,8 @@ _____________________________________________________________________________*/
 	padding-top: 3%;
 	font-size: 3.7em;
 	text-align: center;
+	font-family: GothamBookRegular;
+
 
 }
 
@@ -87,8 +97,10 @@ _____________________________________________________________________________*/
 	display: block;
 	margin-left: 5%;
 	margin-right: 5%;
-	margin-bottom: 10%;
-	
+	margin-bottom: 5%;
+	font-family: GothamBookRegular;
+
+
 }
 
 
@@ -220,12 +232,12 @@ _____________________________________________________________________________*/
 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) { 
-	
+@media only screen and (min-width: 768px) {
+
 	#promotion-subheader-title {
-    font-size: 3.3em;
-   
-}
+		font-size: 3.3em;
+
+	}
 
 }
 
