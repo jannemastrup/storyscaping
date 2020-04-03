@@ -10,6 +10,7 @@
 */
 
 
+
 # Creating a responsive discount popup form
 function responsive_popup_form()
 {
@@ -38,7 +39,7 @@ function responsive_popup_form()
     
 }
     #First parameter is a self choosen name for a unique short-code. Second parameter is the name of the function that creates the newsletter
-    add_shortcode('show_responsive_popup_form','responsive_popup_form');
+    add_shortcode('show_responsive_kogle_popup_form','responsive_popup_form');
 
     #Use action Hook to execute wp_enqueue_scripts with the function register_styles_and_scripts_for_responsive_discount_popup_plugin
     add_action('wp_enqueue_scripts','register_styles_and_scripts_for_responsive_popup_form');
