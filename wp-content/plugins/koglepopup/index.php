@@ -37,7 +37,7 @@ function responsive_popup_form()
     return $content;
     
 }
-    #First parameter is a self choosen name for a unique short-code. Second parameter is the name of the function that creates the newsletter
+    /*First parameter is a self choosen name for a unique short-code. Second parameter is the name of the function that creates the newsletter*/
     add_shortcode('show_responsive_kogle_popup_form','responsive_popup_form');
 
     #Use action Hook to execute wp_enqueue_scripts with the function register_styles_and_scripts_for_responsive_discount_popup_plugin
@@ -49,16 +49,14 @@ function responsive_popup_form()
     {
         
         
-         wp_enqueue_style('CustomStylesheet', plugins_url('koglepopup/css/style.css'));
-        wp_enqueue_style('CustomMaterializeCSS','https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css');
+    
         
-        wp_enqueue_style('CustomFontMaterialIcons','https://fonts.googleapis.com/icon?family=Material+Icons');
+     wp_enqueue_style('CustomStylesheet', plugins_url('koglepopup/css/style.css')); 
         
-       
         
         wp_deregister_script('jquery');
 
-        wp_enqueue_script('CustomJqueryScript','https://code.jquery.com/jquery-2.1.1.min.js', array(), null, true);
+        wp_enqueue_script('CustomJqueryScript','https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), null, true);
         
         wp_enqueue_script('CustomMaterializeScript','https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js', array('CustomJqueryScript'), null, true);
         
