@@ -3,7 +3,7 @@
 * Plugin Name: Kogle pop up plugin
 * Plugin URI: https://mynordicstory.dk/koglebeer
 * Description: This is a pop-up for Kogle. The Plugin is based on HTML5, CSS, JS and PHP
-* Version: 1.9
+* Version: 2.0
 * Author: Janne, Cecillie og Cathrine
 * Author: https://mynordicstory.dk/koglebeer
 * License: GPL2
