@@ -10,6 +10,7 @@
 #slidebox {
 	position: fixed;
 	z-index: 9999;
+    margin-top: 250px;
 }
 
 /* devices (mobil) */
