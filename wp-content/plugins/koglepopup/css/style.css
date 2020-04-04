@@ -5,6 +5,12 @@
 	src: url(../font/GothamBookRegular.otf);
 }
 
+/* plugin fast på siden
+-----------------------------------------------------------------------------*/
+#slidebox {
+	position: fixed;
+	z-index: 9999;
+}
 
 /* devices (mobil) */
 
@@ -20,10 +26,10 @@ img {
 
 }
 
-/* Boksen - ikke udfyldt endnu 
+/* 
 -----------------------------------------------------------------------------*/
 .box {
-	top: -360px;
+	top: -250px;
 	width: 90%;
 	position: relative;
 	left: 5%;
