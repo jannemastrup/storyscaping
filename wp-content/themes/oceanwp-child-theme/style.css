@@ -12,10 +12,23 @@
  Text Domain:  oceanwp
 */
 
-
+@font-face {
+	font-family: GothamBookRegular;
+	src: url(../font/GothamBookRegular.otf);
+}
 
 /* baggrundsfarve skiftet*/
 
 * {
     background-color: beige;
 }
+
+
+h2 {
+	font-family: GothamBookRegular:!important;
+}
+
+p {
+	font-family: GothamBookRegular!important;
+}
+
