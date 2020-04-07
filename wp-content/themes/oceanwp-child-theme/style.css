@@ -17,6 +17,11 @@
 	src: url(../font/GothamBookRegular.otf);
 }
 
+@font-face {
+	font-family: GothamBold;
+	src: url(../font/GothamBold.otf);
+}
+
 /* baggrundsfarve skiftet*/
 
 * {
@@ -25,7 +30,7 @@
 
 
 h2 {
-	font-family: GothamBookRegular:!important;
+	font-family: GothamBold!important;
 }
 
 p {
