@@ -5,7 +5,7 @@
  Author:       Janne Mastrup, Cecillie Prisfeldt og Cathrine Østerbæk
  Author URI:   http://www.mynordicstory.dk/koglebeer
  Template:     oceanwp
- Version:      1.0
+ Version:      2.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
@@ -13,27 +13,20 @@
 */
 
 @font-face {
-	font-family: GothamBookRegular;
-	src: url(../font/GothamBookRegular.otf);
-}
-
-@font-face {
-	font-family: GothamBold;
-	src: url(../font/GothamBold.otf);
-}
+    font-family: 'gothambook';
+    src: url('font/gothambookregular-webfont.woff2') format('woff2'); 
+    src: url('font/gothambookregular-webfont.woff') format('woff'); }
 
 /* baggrundsfarve skiftet*/
 
-* {
-    background-color: beige;
-}
-
-
-h2 {
-	font-family: GothamBold!important;
+/*h2 styling*/
+.elementor-element.elementor-element-a1fb22d.elementor-widget.elementor-widget-heading > div > h2 {
+	font-family: 'gothambook';
+	font-weight: 800;
+	font-size: 5em;
 }
 
 p {
-	font-family: GothamBookRegular!important;
+	font-family: 'gothambook'!important;
 }
 
