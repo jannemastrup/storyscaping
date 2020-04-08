@@ -21,7 +21,9 @@
 .elementor-element.elementor-element-a1fb22d.elementor-widget.elementor-widget-heading > div > h2 {
 	font-family: 'gothambook';
 	font-weight: 900;
-	font-size: 5.5em;
+	font-size: 2em;
+	margin: 0 auto;
+
 }
 
 /* h3 styling */
@@ -46,6 +48,7 @@ p {
 
 .elementor-button:hover {
     background-color: #af7e5f!important;
+    margin: 0 auto;
 }
 
 
@@ -56,6 +59,36 @@ p {
   animation-delay: 1s;
   animation-iteration-count: 1;
   animation-duration: 2s;
+}
+
+
+/*background image*/
+#content > article > div > div > div > div > section.elementor-element.elementor-element-b235861.elementor-reverse-tablet.elementor-reverse-mobile.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default.elementor-section.elementor-top-section {
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px){
+    /*h2 styling*/
+.elementor-element.elementor-element-a1fb22d.elementor-widget.elementor-widget-heading > div > h2 {
+	font-family: 'gothambook';
+	font-weight: 900;
+	font-size: 5.5em;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
+{
+    
 }
 
 
