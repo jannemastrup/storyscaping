@@ -26,6 +26,11 @@
 
 }
 
+#content > article > div > div > div > div > section.elementor-element.elementor-element-e2959d4.elementor-reverse-mobile.elementor-hidden-desktop.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default.elementor-section.elementor-top-section { 
+ background-position: center;
+ background-size: cover;
+}
+
 /* h3 styling */
 h3 {
     font-family: 'gothambook'; 
