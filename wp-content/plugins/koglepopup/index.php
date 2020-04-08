@@ -3,36 +3,35 @@
 * Plugin Name: Kogle pop up plugin
 * Plugin URI: https://mynordicstory.dk/koglebeer
 * Description: This is a pop-up for Kogle. The Plugin is based on HTML5, CSS, JS and PHP
-* Version: 2.0
+* Version: 1.9
 * Author: Janne, Cecillie og Cathrine
 * Author: https://mynordicstory.dk/koglebeer
 * License: GPL2
 */
 
 
-# Creating a responsive discount popup form
+/*Indhenter HTML ind i PHP så wordpress kan læse det. = betyder hvad er der i funktionen. .= man lægger noget til funktionen.*/
 function responsive_popup_form()
 {
 
     $content = '';
     $content .= '<div class="box slide-top" id="slideBox">';
     $content .= '<img src=" '.plugins_url("koglepopup/img/logoanimate.gif").' " ';
-     $content .= 'alt="kogleanimation">';
+    $content .= 'alt="kogleanimation">';
     $content .= '<h1 id="promotion-header-title">KOGLE</h1>';
     $content .= '<h2 id="promotion-subheader-title">Er du over den lovlige drikkealder i Danmark?</h2>';
-   $content .= '<section class="janej">';
-   $content .= '<div>';
+    $content .= '<section class="janej">';
+    $content .= '<div>';
     $content .= '<h3 id="close" class="popupCloseButton">JA</h3>';
-     $content .= '</div>';
-       $content .= '<div>';
-    $content .= '<a href="https://www.sum.dk/Aktuelt/Nyheder/Forebyggelse/2013/Januar/Lovstramning_skal_begraense_unges_ryge_og_drukvaner">NEJ</a>';
-     $content .= '</div>';
-$content .= '</section>';
     $content .= '</div>';
-    $content .= '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>';
+    $content .= '<div>';
+    $content .= '<a href="https://www.sum.dk/Aktuelt/Nyheder/Forebyggelse/2013/Januar/Lovstramning_skal_begraense_unges_ryge_og_drukvaner">NEJ</a>';
+    $content .= '</div>';
+    $content .= '</section>';
+    $content .= '</div>';
+    $content .= '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>';
     $content .= '<script>
         $(document).ready(function() {
-		$("#slideBox").appendTo(document.body);
             $("#close").click(function() {
                 $("#slideBox").hide();
             });
@@ -42,25 +41,33 @@ $content .= '</section>';
     return $content;
     
 }
-    /*First parameter is a self choosen name for a unique short-code. Second parameter is the name of the function that creates the newsletter*/
+    /*Første parameter er et selvvalgt navn på den shortcode, vi skal bruge til at aktivere plugin. 
+    Andet parameter er navnet på den funktion som skal anvendes (HTML content som skal hentes ned) for at bruge plugin*/
     add_shortcode('show_responsive_kogle_popup_form','responsive_popup_form');
 
     #Use action Hook to execute wp_enqueue_scripts with the function register_styles_and_scripts_for_responsive_discount_popup_plugin
     add_action('wp_enqueue_scripts','register_styles_and_scripts_for_responsive_popup_form');
 
     
-    # Enqueue stylesheets and javascript files
+    # Indhenter stylesheets og jQuery bibliotek
     function register_styles_and_scripts_for_responsive_popup_form() 
     {
         
         
         
-     wp_enqueue_style('CustomStylesheet', plugins_url('koglepopup/css/style.css')); 
+    wp_enqueue_style('CustomStylesheet', plugins_url('koglepopup/css/style.css')); 
         
+        /*Fjerner linket til jQuery biblioteket som wordpress evt. har linket til.*/
         
-        wp_deregister_script('jquery');
+    wp_deregister_script('jquery'); 
+        
+        /*Linker til den version af jQuery bibliotek jeg vil anvende.
+        Første parameter et unikt navn custom-jquery, andet parameter er en url til jQuery bibliotek (CDN). 
+Der kommer så et array (tredje parameter), indeni det kan man skrive en script fil, som skal loade før jQuery bibliotek, hvis det er afhængigt af, at andre filer skal loade først. 
+Fjerdeparamenter: '1.0' versionsnummer eller null (ikke angivet versionsnummer af biblioteket)
+Femte parameter: true, hvor ønsker man at loade jQuery biblioteket, kan loade i header eller footer. */
 
-        wp_enqueue_script('CustomJqueryScript','https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), null, true);
+    wp_enqueue_script('jquery','https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
         
     
     }
