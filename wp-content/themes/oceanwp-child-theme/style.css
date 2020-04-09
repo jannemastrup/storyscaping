@@ -26,7 +26,7 @@
 
 }
 
-#content > article > div > div > div > div > section.elementor-element.elementor-element-e2959d4.elementor-reverse-mobile.elementor-hidden-desktop.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default.elementor-section.elementor-top-section { 
+#baggrundsbillede { 
  background-position: center;
  background-size: cover;
 }
@@ -36,6 +36,7 @@ h3 {
     font-family: 'gothambook'; 
     font-weight: 800;
 }
+
 
 
 /*tekst styling*/
@@ -73,12 +74,15 @@ p {
      background-repeat: no-repeat;
 }
 
+
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
-
-
+.elementor-element.elementor-element-a1fb22d.elementor-widget.elementor-widget-heading > div > h2 {
+    font-size: 3em!important;
 }
+}
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px){
@@ -88,12 +92,11 @@ p {
 	font-weight: 900;
 	font-size: 5.5em;
 }
-}
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px)
-{
-    
-}
+.elementor-element.elementor-element-a1fb22d.elementor-widget.elementor-widget-heading > div > h2 {
+    font-size: 4.5em!important;
+
+} }
+
 
 
